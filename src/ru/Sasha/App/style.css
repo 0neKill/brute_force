@@ -1,0 +1,4 @@
+.btn_exit:hover{
+    -fx-text-fill: brown;
+    -fx-cursor: hand; 
+}

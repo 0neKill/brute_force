@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="470.0" styleClass="btn" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.Sasha.Controllers.Controller">
+   <children>
+      <Label layoutX="121.0" layoutY="37.0" text="Brute Force">
+         <font>
+            <Font name="Lucida Bright Regular" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_exit" contentDisplay="CENTER" layoutX="433.0" layoutY="14.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#exitEvent_btn" styleClass="btn_exit" stylesheets="@style.css" text="X" textFill="#7c1d1d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userName" layoutX="98.0" layoutY="124.0" prefHeight="25.0" prefWidth="356.0" />
+      <Label layoutX="14.0" layoutY="128.0" text="Введите хэш:" />
+      <Button layoutX="196.0" layoutY="233.0" mnemonicParsing="false" onAction="#resultBtnAction" text="Выполнить" />
+      <Label fx:id="passLabel" layoutX="203.0" layoutY="177.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="MainBlock" layoutX="209.0" layoutY="161.0" prefHeight="72.0" prefWidth="77.0" />
+      <MenuButton fx:id="wordsBox" layoutX="348.0" layoutY="16.0" mnemonicParsing="false" text="Словарь" underline="true">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#oneWords" text="Words1" />
+          <MenuItem mnemonicParsing="false" onAction="#twoWords" text="Words2" />
+            <MenuItem mnemonicParsing="false" onAction="#threeWords" text="Words3" />
+        </items>
+      </MenuButton>
+      <Label fx:id="labelLoad" layoutX="185.0" layoutY="93.0" />
+   </children>
+</Pane>
